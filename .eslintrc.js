@@ -9,10 +9,11 @@ module.exports = {
   },
   extends: [
     '@nuxtjs',
+    'plugin:vue/recommended',
+    'plugin:nuxt/recommended',
     'prettier',
     'prettier/vue',
     'plugin:prettier/recommended',
-    'plugin:nuxt/recommended',
   ],
   plugins: ['prettier'],
   rules: {
