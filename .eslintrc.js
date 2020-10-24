@@ -7,15 +7,15 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint',
   },
+  plugins: ['prettier'],
   extends: [
     '@nuxtjs',
     'plugin:vue/recommended',
     'plugin:nuxt/recommended',
+    'plugin:prettier/recommended',
     'prettier',
     'prettier/vue',
-    'plugin:prettier/recommended',
   ],
-  plugins: ['prettier'],
   rules: {
     'prettier/prettier': 'error',
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
